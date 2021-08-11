@@ -35,7 +35,7 @@ const setting = JSON.parse(fs.readFileSync('./src/settings.json'))
 const ban = JSON.parse(fs.readFileSync('./database/banned.json'))
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:meu criador\n' // Seu nome
+            + 'FN:Lukera\n' // Seu nome
             + 'ORG:Boteco ofc;\n' // Nome do bot
             + 'TEL;type=CELL;type=VOICE;waid=5516991766933:+55 16 99176-6933\n' //Seu número Whatsapp
             + 'END:VCARD'
@@ -244,7 +244,7 @@ client.on('CB:action,,battery', json => {
            return console.log(color('[BAN] Ignorando comando', 'blue'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${command}`),'DE:', color(pushname))}
 
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'Lukera; if (!author) author = '🙃';	
+				if (!packname) packname = 'Lucas'; if (!author) author = 'Boteco';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
