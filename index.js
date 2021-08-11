@@ -244,7 +244,7 @@ client.on('CB:action,,battery', json => {
            return console.log(color('[BAN] Ignorando comando', 'blue'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${command}`),'DE:', color(pushname))}
 
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'Boteco; if (!author) author = 'luke.ra';	
+				if (!packname) packname = 'Lukera; if (!author) author = '🙃';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
